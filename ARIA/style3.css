@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: gray;
+  transition: background 0.3s, color 0.3s;
+}
+
+ul {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+#status {
+  text-align: center;
+  min-height: 20px;
+}
+
+.theme-light {
+  background-color: white;
+  color: black;
+}
+
+.theme-dark {
+  background-color: black;
+  color: white;
+}
+
+.theme-red {
+  background-color: red;
+  color: white;
+}
+
+.theme-blue {
+  background-color: blue;
+  color: white;
+}

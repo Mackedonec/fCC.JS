@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../ARIA/style3.css" />
+    <title>Theme Switcher</title>
+  </head>
+  <body>
+    <main>
+      <button
+        id="theme-switcher-button"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-controls="theme-dropdown"
+      >
+        Switch Theme
+      </button>
+      <ul
+        id="theme-dropdown"
+        role="menu"
+        aria-labelledby="theme-switcher-button"
+        hidden
+      >
+        <li role="menuitem" id="theme-light" class="theme-light">Light</li>
+        <li role="menuitem" id="theme-dark" class="theme-dark">Dark</li>
+        <li role="menuitem" id="theme-red" class="theme-red">Red</li>
+        <li role="menuitem" id="theme-blue" class="theme-blue">Blue</li>
+      </ul>
+      <p id="status" aria-live="polite"></p>
+    </main>
+    <script src="../ARIA/script3.js"></script>
+  </body>
+</html>
